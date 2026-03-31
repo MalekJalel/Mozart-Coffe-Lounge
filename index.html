@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozart Coffee Lounge — Café & Restaurant à Radès</title>
+    <meta name="description" content="Mozart Coffee Lounge — Un lieu où chaque moment se savoure comme une belle mélodie. Café & Restaurant d'exception à Radès, Tunisie. Cafés, plats gourmets, desserts raffinés.">
+    <meta name="keywords" content="Mozart Coffee Lounge, café Radès, restaurant Radès, salon de thé Tunisie, brunch, tiramisu, smoothie, panini">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Musical Notes Background -->
+    <div class="music-notes" aria-hidden="true">
+        <span class="note">♪</span>
+        <span class="note">♫</span>
+        <span class="note">♩</span>
+        <span class="note">♬</span>
+        <span class="note">♪</span>
+        <span class="note">♫</span>
+        <span class="note">♩</span>
+        <span class="note">♬</span>
+    </div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <div class="logo-crop nav-crop">
+                    <img src="images/Logo.jpeg" alt="Mozart Coffee Lounge" class="nav-logo-img">
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À Propos</a></li>
+                <li><a href="#menu" class="nav-link">Notre Carte</a></li>
+                <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                <li><a href="#reviews" class="nav-link">Avis</a></li>
+                <li><a href="#location" class="nav-link nav-cta">Localisation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted playsinline class="hero-video" id="heroVideo">
+                <source src="images/WhatsApp Video 2026-03-31 at 06.56.34.mp4#t=2.0" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo-wrapper" data-animate="fade-down">
+                <div class="logo-crop hero-crop">
+                    <img src="images/Logo.jpeg" alt="Mozart Coffee Lounge" class="hero-logo">
+                </div>
+            </div>
+            <div class="hero-divider" data-animate="scale-in">
+                <span class="divider-ornament">❧</span>
+                <span class="divider-line"></span>
+                <span class="divider-ornament">❧</span>
+            </div>
+            <p class="hero-tagline" data-animate="fade-up">
+                Un lieu où chaque moment se savoure<br>comme une belle mélodie
+            </p>
+            <div class="hero-badges" data-animate="fade-up">
+                <span class="badge">☕ Cafés d'Exception</span>
+                <span class="badge">🍽️ Plats Gourmets</span>
+                <span class="badge">✨ Ambiance Élégante</span>
+            </div>
+            <div class="hero-actions" data-animate="fade-up">
+                <a href="#menu" class="btn btn-primary">Découvrir la Carte</a>
+                <a href="#location" class="btn btn-outline">Nous Trouver</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Découvrir</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" data-animate="fade-right">
+                    <span class="section-label">Bienvenue</span>
+                    <h2 class="section-title">L'Art du Café<br>& de la Gastronomie</h2>
+                    <div class="title-underline">
+                        <span class="ornament">♪</span>
+                    </div>
+                    <p class="about-text">
+                        Niché au cœur de Radès, <strong>Mozart Coffee Lounge</strong> vous invite à une 
+                        expérience culinaire raffinée dans un cadre élégant et chaleureux. Inspiré par 
+                        la grâce intemporelle de la musique classique, chaque visite est une symphonie 
+                        de saveurs.
+                    </p>
+                    <p class="about-text">
+                        Des cafés d'exception aux plats gourmets, en passant par nos desserts signatures 
+                        et nos smoothies artisanaux — chaque création est composée avec la même passion 
+                        et le même souci du détail qu'une œuvre musicale.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat" data-animate="fade-up">
+                            <span class="stat-number">7</span><span class="stat-suffix">/7</span>
+                            <span class="stat-label">Jours d'Ouverture</span>
+                        </div>
+                        <div class="stat" data-animate="fade-up">
+                            <span class="stat-number">07h</span><span class="stat-suffix">- 00h</span>
+                            <span class="stat-label">Horaires</span>
+                        </div>
+                        <div class="stat" data-animate="fade-up">
+                            <span class="stat-icon">♫</span>
+                            <span class="stat-label">Ambiance Musicale</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images" data-animate="fade-left">
+                    <div class="about-showcase">
+                        <div class="showcase-primary">
+                            <img src="images/WhatsApp Image 2026-03-31 at 06.56.40 (4).jpeg" alt="Milkshake Spécialité" class="showcase-img">
+                        </div>
+                        <div class="showcase-secondary">
+                            <img src="images/WhatsApp Image 2026-03-31 at 06.56.40 (5).jpeg" alt="Tiramisu Gourmet" class="showcase-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MENU SECTION ========== -->
+    <section id="menu" class="section menu">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Notre Carte</span>
+                <h2 class="section-title">Saveurs d'Exception</h2>
+                <div class="title-underline"><span class="ornament">♪</span></div>
+                <p class="section-subtitle">Chaque plat est une note dans notre symphonie culinaire</p>
+            </div>
+
+            <!-- Menu Category Tabs -->
+            <div class="menu-tabs" data-animate="fade-up">
+                <button class="menu-tab active" data-category="all">Tous</button>
+                <button class="menu-tab" data-category="cafes">Cafés & Thés</button>
+                <button class="menu-tab" data-category="sandwiches">Sandwiches</button>
+                <button class="menu-tab" data-category="plats">Plats</button>
+                <button class="menu-tab" data-category="petitdej">Petit-Déjeuner</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="boissons">Boissons</button>
+                <button class="menu-tab" data-category="classiques">Jus & Eau</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+
+                <!-- === CAFÉS & THÉS === -->
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">☕</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Espresso</h3>
+                            <p class="menu-card-desc">Un café court et intense, la quintessence de l'arabica</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">☕</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Double Espresso</h3>
+                            <p class="menu-card-desc">Pour les amateurs de sensations fortes, un double shot corsé</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">☕</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Cappuccino</h3>
+                            <p class="menu-card-desc">Espresso, lait chaud et mousse onctueuse, saupoudré de cacao</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">☕</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Café Latte</h3>
+                            <p class="menu-card-desc">Espresso allongé au lait chaud velouté, douceur et équilibre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">☕</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Café Américano</h3>
+                            <p class="menu-card-desc">Espresso allongé à l'eau chaude, léger mais savoureux</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">☕</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Café Crème</h3>
+                            <p class="menu-card-desc">Café classique avec une touche de crème, un incontournable</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">☕</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Macchiato</h3>
+                            <p class="menu-card-desc">Espresso marqué d'une touche de mousse de lait</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">☕</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Café Turc</h3>
+                            <p class="menu-card-desc">Préparé à la tradition, corsé et aromatique</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍵</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Thé Vert</h3>
+                            <p class="menu-card-desc">Thé vert classique, léger et riche en antioxydants</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍵</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Thé à la Menthe</h3>
+                            <p class="menu-card-desc">Thé vert infusé à la menthe fraîche, un classique rafraîchissant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍵</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Thé Noir</h3>
+                            <p class="menu-card-desc">Thé noir corsé et parfumé, idéal pour accompagner vos pâtisseries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍵</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Infusion aux Fruits</h3>
+                            <p class="menu-card-desc">Mélange fruité sans caféine, doux et réconfortant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="cafes" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍫</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Chocolat Chaud</h3>
+                            <p class="menu-card-desc">Chocolat fondu onctueux, surmonté de crème fouettée</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === SANDWICHES === -->
+                <div class="menu-card" data-category="sandwiches" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥪</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Panini</h3>
+                            <p class="menu-card-desc">Panini grillé, garni de charcuterie et fromage, accompagné d'une salade fraîche</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="sandwiches" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🌯</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Tacos <span class="menu-card-badge" style="position:relative; top:-2px; left: 8px;">+ Salade</span></h3>
+                            <p class="menu-card-desc">Tacos maison garni de viande fondante, sauces et frites croustillantes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="sandwiches" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥪</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Sandwich Ciabatta <span class="menu-card-badge" style="position:relative; top:-2px; left: 8px;">+ Salade</span></h3>
+                            <p class="menu-card-desc">Pain ciabatta artisanal garni de légumes frais, viandes et fromages fins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="sandwiches" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥙</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Libanais <span class="menu-card-badge" style="position:relative; top:-2px; left: 8px;">+ Salade</span></h3>
+                            <p class="menu-card-desc">Wrap libanais grillé aux saveurs méditerranéennes, accompagné d'une salade</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === PLATS === -->
+                <div class="menu-card" data-category="plats" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥗</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Salade Mozart</h3>
+                            <p class="menu-card-desc">Notre salade signature aux ingrédients frais et raffinés, une composition harmonieuse</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="plats" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍝</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Pâtes Chevrette</h3>
+                            <p class="menu-card-desc">Pâtes aux crevettes sauce blanche crémeuse, un délice de la mer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="plats" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍝</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Pâtes Chevrette Rosé</h3>
+                            <p class="menu-card-desc">Pâtes aux crevettes sauce rosée, un mariage parfait de saveurs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === PETIT-DÉJEUNER === -->
+                <div class="menu-card" data-category="petitdej" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥐</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Brunch Anna Maria</h3>
+                            <p class="menu-card-desc">Café au choix, viennoiserie, toast, confiture, pancake, omelette, yaourt gourmand, fruits</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="petitdej" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍳</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Petit-Déjeuner Élégance</h3>
+                            <p class="menu-card-desc">Commencez la journée avec élégance — omelette, toast, croissants et café</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="petitdej" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥞</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Crêpes Gourmandes</h3>
+                            <p class="menu-card-desc">Crêpes nappées de chocolat fondant et éclats de M&M's colorés</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === DESSERTS === -->
+                <div class="menu-card" data-category="desserts" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍰</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Tiramisu Oreo</h3>
+                            <p class="menu-card-desc">Une revisite gourmande du classique italien avec des biscuits Oreo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍰</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Tiramisu Spéculoos</h3>
+                            <p class="menu-card-desc">Un mariage parfait entre la douceur du mascarpone et le croquant du spéculoos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍮</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Tiramisu Ferrero Rocher</h3>
+                            <p class="menu-card-desc">L'élégance gourmande avec Ferrero Rocher, une fusion divine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === BOISSONS === -->
+                <div class="menu-card" data-category="boissons" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🧋</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Milkshake Ferrero Rocher</h3>
+                            <p class="menu-card-desc">Une explosion de douceur, l'accord parfait entre onctuosité et gourmandise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="boissons" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🧋</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Milkshake Chocolat</h3>
+                            <p class="menu-card-desc">L'accord parfait entre onctuosité et gourmandise chocolatée</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="boissons" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍹</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Smoothie Tropical</h3>
+                            <p class="menu-card-desc">Un goût d'évasion — fraîcheur fruitée et douceur tropicale</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="boissons" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥭</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Smoothie Mama Manga</h3>
+                            <p class="menu-card-desc">La douceur tropicale de la mangue à chaque gorgée</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="boissons" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥤</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Machine Détox</h3>
+                            <p class="menu-card-desc">Votre alliée pour un corps revitalisé — pomme, citron, concombre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="boissons" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍹</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Cocktail Trio</h3>
+                            <p class="menu-card-desc">L'explosion de saveurs en un seul verre — fraise, orange, ananas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="boissons" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍌</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Jus de Banane</h3>
+                            <p class="menu-card-desc">La douceur et la fraîcheur dans chaque gorgée</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === JUS STANDARD & EAU === -->
+                <div class="menu-card" data-category="classiques" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍊</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Jus d'Orange Pressé</h3>
+                            <p class="menu-card-desc">Oranges fraîchement pressées, vitamines et énergie naturelle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="classiques" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍋</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Citronnade</h3>
+                            <p class="menu-card-desc">Citrons frais, une touche de sucre et de la menthe — rafraîchissant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="classiques" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍎</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Jus de Pomme</h3>
+                            <p class="menu-card-desc">Jus de pomme naturel, frais et désaltérant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="classiques" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🍓</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Jus de Fraise</h3>
+                            <p class="menu-card-desc">Fraises mixées, douceur naturelle et couleur éclatante</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="classiques" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥭</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Jus de Mangue</h3>
+                            <p class="menu-card-desc">Nectar de mangue exotique, sucré et parfumé</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="classiques" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">🥤</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Soda</h3>
+                            <p class="menu-card-desc">Coca-Cola, Fanta, Sprite — les classiques rafraîchissants</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="classiques" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">💧</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Eau Minérale</h3>
+                            <p class="menu-card-desc">Eau minérale plate ou gazeuse</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="classiques" data-animate="fade-up">
+                    <div class="menu-card-no-img">
+                        <div class="menu-icon">💧</div>
+                        <div class="menu-card-body">
+                            <h3 class="menu-card-title">Eau Aromatisée</h3>
+                            <p class="menu-card-desc">Eau infusée au citron, concombre et menthe fraîche</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Notre Univers</span>
+                <h2 class="section-title">Galerie</h2>
+                <div class="title-underline"><span class="ornament">♪</span></div>
+            </div>
+        </div>
+        <div class="gallery-marquee-container" data-animate="fade-up">
+            <div class="gallery-marquee">
+                <!-- Set 1 -->
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.42 (3).jpeg" alt="Salade Mozart" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.40 (5).jpeg" alt="Tiramisu Oreo" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.40 (4).jpeg" alt="Milkshake Ferrero" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.40 (8).jpeg" alt="Smoothie Tropical" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.34 (2).jpeg" alt="Panini" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.41 (8).jpeg" alt="Brunch Anna Maria" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.42 (1).jpeg" alt="Pâtes Chevrette" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.41 (2).jpeg" alt="Cocktail Trio" class="crop-instagram">
+                </div>
+                <!-- Set 2 (Duplicate for infinite loop) -->
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.42 (3).jpeg" alt="Salade Mozart" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.40 (5).jpeg" alt="Tiramisu Oreo" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.40 (4).jpeg" alt="Milkshake Ferrero" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.40 (8).jpeg" alt="Smoothie Tropical" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.34 (2).jpeg" alt="Panini" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.41 (8).jpeg" alt="Brunch Anna Maria" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.42 (1).jpeg" alt="Pâtes Chevrette" class="crop-instagram">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/WhatsApp Image 2026-03-31 at 06.56.41 (2).jpeg" alt="Cocktail Trio" class="crop-instagram">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REVIEWS SECTION ========== -->
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-label">Témoignages</span>
+                <h2 class="section-title">Ce Que Disent<br>Nos Clients</h2>
+                <div class="title-underline"><span class="ornament">♪</span></div>
+            </div>
+            <div class="reviews-carousel" data-animate="fade-up">
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Un endroit magnifique ! Le tiramisu Ferrero Rocher est tout simplement divin. L'ambiance est chaleureuse et le service impeccable. Mon café préféré à Radès !"</p>
+                        <div class="review-author">
+                            <div class="review-avatar">S</div>
+                            <div>
+                                <span class="review-name">Sarra B.</span>
+                                <span class="review-date">Janvier 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Les smoothies sont incroyables et les paninis sont généreux ! L'endroit est très bien décoré, parfait pour un brunch le weekend. Je recommande vivement."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">A</div>
+                            <div>
+                                <span class="review-name">Ahmed K.</span>
+                                <span class="review-date">Février 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Le brunch Anna Maria est extraordinaire ! Rapport qualité-prix imbattable. Le cadre est élégant et on se sent comme dans un vrai café européen."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">I</div>
+                            <div>
+                                <span class="review-name">Imen J.</span>
+                                <span class="review-date">Mars 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Un vrai coup de cœur ! Les pâtes aux chevrettes sont délicieuses et la salade Mozart est fraîche et raffinée. Ambiance calme et musique agréable."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">M</div>
+                            <div>
+                                <span class="review-name">Mohamed T.</span>
+                                <span class="review-date">Janvier 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Chaque visite est un plaisir. Le milkshake chocolat est à tomber ! Service rapide et souriant. C'est devenu notre rendez-vous familial du dimanche."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">L</div>
+                            <div>
+                                <span class="review-name">Leila R.</span>
+                                <span class="review-date">Février 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-controls">
+                    <button class="review-btn review-prev" id="reviewPrev" aria-label="Avis précédent">❮</button>
+                    <div class="reviews-dots" id="reviewsDots"></div>
+                    <button class="review-btn review-next" id="reviewNext" aria-label="Avis suivant">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LOCATION SECTION ========== -->
+    <section id="location" class="section reservation">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-info" data-animate="fade-right">
+                    <span class="section-label">Nous Trouver</span>
+                    <h2 class="section-title">Notre<br>Emplacement</h2>
+                    <div class="title-underline"><span class="ornament">♪</span></div>
+                    <p class="reservation-text">Retrouvez-nous au cœur de Radès pour un moment d'exception. L'harmonie parfaite entre goût et ambiance.</p>
+                    <div class="reservation-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <div>
+                                <strong>Adresse</strong>
+                                <span>Rue de Carthage, Radès, Tunisie</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📞</span>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <a href="tel:+21692029042">+216 92 029 042</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🕐</span>
+                            <div>
+                                <strong>Horaires</strong>
+                                <span>7j/7 — 07h00 à 00h00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-3d-wrapper" data-animate="fade-left">
+                    <div class="map-3d-card">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.5!2d10.27!3d36.77!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDQ2JzE0LjQiTiAxMMKwMTYnMTIuMCJF!5e0!3m2!1sfr!2stn!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT / FOOTER ========== -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-crop footer-crop">
+                        <img src="images/Logo.jpeg" alt="Mozart Coffee Lounge" class="footer-logo">
+                    </div>
+                    <p class="footer-tagline">Un lieu où chaque moment se savoure comme une belle mélodie</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/people/Mozart-Coffee-Lounge/61571188172248/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/mozart_coffee_lounge" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://wa.me/21692029042" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#menu">Notre Carte</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#reviews">Avis</a></li>
+                        <li><a href="#location">Localisation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Horaires</h4>
+                    <ul class="hours-list">
+                        <li><span>Lundi - Dimanche</span><span>07h00 - 00h00</span></li>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">Contact</h4>
+                    <ul>
+                        <li><a href="tel:+21692029042">+216 92 029 042</a></li>
+                        <li>Rue de Carthage, Radès</li>
+                        <li>Tunisie</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mozart Coffee Lounge — Tous droits réservés</p>
+                <p class="footer-credit">Un lieu où chaque moment se savoure comme une belle mélodie ♪</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/21692029042" target="_blank" class="whatsapp-float" aria-label="Contactez-nous sur WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-top-btn" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
